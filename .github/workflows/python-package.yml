@@ -31,7 +31,7 @@ jobs:
         pip install Cython
         pip install pycocotools
         pip install shapely
-        python -m pip black flake8 mypy pytest hypothesis isort pylint
+        python -m pip install black flake8 mypy pytest hypothesis isort pylint
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run black
       run:
