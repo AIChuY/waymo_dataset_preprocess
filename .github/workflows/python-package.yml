@@ -43,11 +43,11 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run pylint
-      run: pylint waymo_dataset_preprocess
+      run: pylint .
     - name: Run Mypy
-      run: mypy waymo_dataset_preprocess
+      run: mypy .
     - name: Run isort
-      run: isort --profile black waymo_dataset_preprocess
+      run: isort --profile black .
     - name: Test with pytest
       run: |
         pytest
