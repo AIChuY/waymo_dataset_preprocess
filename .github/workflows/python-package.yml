@@ -37,11 +37,11 @@ jobs:
       run:
         black --check .
     - name: Run pylint
-      run: pylint iglovikov_helper_functions
+      run: pylint Waymo-dataset-preprocess
     - name: Run Mypy
-      run: mypy iglovikov_helper_functions
+      run: mypy Waymo-dataset-preprocess
     - name: Run isort
-      run: isort --profile black iglovikov_helper_functions
+      run: isort --profile black Waymo-dataset-preprocess
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
