@@ -48,6 +48,6 @@ jobs:
       run: mypy .
     - name: Run isort
       run: isort --profile black .
-    - name: Test with pytest
-      run: |
-        pytest
+#    - name: Test with pytest
+#      run: |
+#        pytest
